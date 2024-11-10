@@ -22,7 +22,7 @@ blockquete {
 
 .header {
   box-sizing: border-box;
-  width: 1052px; 
+  width: 1052px;
   max-width: 1440px;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
