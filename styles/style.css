@@ -97,13 +97,15 @@ blockquete {
 .cover {
   /*я все перепробовала, но ложится криво. не понимаю*/
   position: relative;
-  width: 1100px;
+  /*width: 1100px;*/
+  width: 100%;
   height: 757px;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin-top: 0;
+  padding: 60px 0 10px;
 }
 
 .overlay {
@@ -116,22 +118,21 @@ blockquete {
 }
 
 .cover__title {
-  /*я правда не анимаю, что делаю не так и почему он не такой. в примре "с чистого листа", все село как надо*/
+  /*я правда не анимаю, что делаю не так*/
+  display: block;
   position: relative;
   text-transform: uppercase;
-  font-weight: bold;
   color: #fff;
   font-family: Raleway, sans-serif;
   font-size: 100px;
   line-height: 115px;
   letter-spacing: 0.3em;
-  gap: 20px;
-  padding:  155px 0 0;
-  margin: 0 auto;
+  padding:  150px 20px 0;
+  margin: 0;
 }
 
 .aligned-text {
-  display: block;
+  position: relative;
 }
 
 .letter-spacing-extended {
@@ -140,16 +141,15 @@ blockquete {
 
 .aligned-text-center {
   display: block;
+  position: relative;
   text-align: center;
   letter-spacing: 0.3em;
-  line-height: 134px;
 }
 
 .aligned-text-right {
-  /*я не понимаю почему он слева*/
   display: block;
-  justify-content: right;
-  line-height: 107px;
+  position: relative;
+  text-align: right;
   letter-spacing: 0.3em;
 }
 
@@ -159,24 +159,20 @@ blockquete {
 
 .cover__description {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 138px 50px 51px 5px;
-  letter-spacing: 0.1em;
+  gap: 79px;
+  padding: 145px 30px 20px 58px;
 }
 
 .cover__description-text {
   color: #fff;
   font-family: Raleway, sans-serif;
   font-weight: 400;
-  font-size: 19px;
+  font-size: 22px;
   word-spacing: 18px;
   text-transform: uppercase;
   align-items: center;
   line-height: 28px;
   width: 637px;
-  padding: 66px 0 0 0;
-  padding-bottom: 50px;
 }
 
 .bet-button {
