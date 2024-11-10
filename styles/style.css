@@ -315,51 +315,61 @@ blockquete {
 }
 
 .about {
-  box-sizing: border-box;
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 693px;
+  grid-template-columns: 1fr 2fr;
+  /*max-height: 595px;
+  margin-top: 146px;*/
+  grid-template-areas: 
+  "logo title"
+  ". text"
+  ". text";
 }
 
 .about__logo {
-  display: flex;
-  justify-content: center;
+  position: relative;
+  grid-area: logo;
   align-items: center;
   width: 240px;
   height: 240px;
   border-radius: 50%;
   background-color: #000;
-  margin: 0 47px;
-  z-index: 0;
+  margin-left: 50px;
 }
 
 .about__logo-image {
-  width: 148px;
-  height: 114px;
   background-image: url(../images/logo-white.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  z-index: 1;
+  justify-content: center;
+  width: 148px;
+  height: 114px;
+  grid-area: logo;
+  margin-top: 64px;
+  margin-left: 46.48px;
 }
 
 .about__title {
+  grid-area: title;
   font-size: 40px;
   text-transform: uppercase;
 }
 
 .about__text {
   font-weight: 800;
-  margin-top: 92px;
   font-size: 20px;
+  margin-top: 99px;
 }
 
 .about__text-1 {
+  grid-area: text;
   margin-top: 100px;
   font-size: 20px;
-  padding-right: 25px;
+  padding-right: 15px;
 }
 .about__text-2 {
+  grid-area: text;
   margin-top: 30px;
 }
 
@@ -370,7 +380,7 @@ blockquete {
   "address menu social";
   width: 1000px;
   height: 98px;
-  margin: 187px 5px 76px 26px;
+  margin: 198px 5px 76px 26px;
 }
 
 .address {
@@ -387,6 +397,7 @@ blockquete {
 
 .footer__menu-list {
   display: flex;
+  font-size: 18px;
   flex-direction: column;
   align-items: center;
   text-underline-position: under;
