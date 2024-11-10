@@ -24,7 +24,7 @@ blockquete {
   box-sizing: border-box;
   width: 1052px; 
   max-width: 1440px;
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr min-content 1fr;
   grid-template-areas: 
   "menu logo address";
@@ -47,7 +47,6 @@ blockquete {
   align-items: center;
   gap: 32px;
   text-underline-offset: 4px;
-  list-style: none;
   list-style: circle;
   color: #000;
   box-sizing: border-box;
