@@ -35,7 +35,6 @@ blockquete {
 
 .header__menu {
   display: flex;
-  gap: 32px;
   text-underline-offset: 4px;
   list-style: circle;
 }
@@ -46,16 +45,17 @@ blockquete {
   flex-direction: row;
   justify-content: start;
   align-items: center;
-  gap: 29px;
+  gap: 31px;
   text-underline-offset: 4px;
   list-style: circle;
   color: #000;
   box-sizing: border-box;
+  margin-right: 30px;
 }
 
 .header__link {
   color: #000;
-  font-size: 18px;
+  font-size: 10px;
 }
 
 .header__link-item_no-bullit {
@@ -94,6 +94,7 @@ blockquete {
   line-height: 24.3px;
   text-decoration: none;
   text-underline-offset: 4px;
+  padding-top: 4px;
 }
 
 .cover {
@@ -132,7 +133,6 @@ blockquete {
 
 .aligned-text {
   display: block;
-  font-size: 100;
   font-size: 700;
   line-height: 115px;
   text-transform: uppercase;
@@ -142,7 +142,6 @@ blockquete {
 
 .letter-spacing-extended {
   letter-spacing: 0.6em;
-  font-size: 100;
   font-size: 700;
   line-height: 115px;
   margin-right: 10px;
@@ -288,7 +287,8 @@ blockquete {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  width: 100%;
+  width: 334px;
+  margin-right: 100px;
 }
 
 .card_type_book {
@@ -302,7 +302,7 @@ blockquete {
   flex-direction: column;
   min-height: 100%;
   width: 334px;
-  margin-right: 10px;
+  margin-right: 100px;
 }
 
 .card_type_picture {
